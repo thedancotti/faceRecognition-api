@@ -25,7 +25,12 @@ app.use(cors());
 
 app.get('/', (req, res) => {
     //do something
-
+    try {
+        res.send('it is working!')
+    }
+    catch(err) {
+        console.log(err)
+    }
 })
 
 app.post(
