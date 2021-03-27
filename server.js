@@ -48,6 +48,11 @@ app.put(
     image.handleImage(db)
 );
 
+app.post(
+    '/imageUrl',
+    image.handleApiCall
+);
+
 app.listen(3001, () => {
     console.log('app is running on port 3001');
 })
